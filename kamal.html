@@ -1,0 +1,742 @@
+<html>
+<head>
+	<title>mix optics </title>
+	<meta http-equiv="content-type" content="text/html; charset = utf-8"/>
+	<meta charset="utf-8">
+	
+	<link rel="shortcut icon" href="images/Download-Sunglasses%20-%20Copy.png">
+	<link rel="stylesheet"href= "bootstrap-3.3.7-dist/css/bootstrap.min.css"  id="bootstrap-css" />
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css" />
+	
+	
+	
+	    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/hover.css"/> 
+
+   <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' />
+	<link  rel="stylesheet" href="css/animate.css" />
+	<script src="bootstrap-3.3.7-dist/js/jquery-1.11.1.min.js"></script>
+	 <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	
+	
+<link rel="stylesheet" href="css/kamil.css">
+	
+	
+	<style>
+	
+		
+	body {
+	height: 4000px;
+	color: #fff
+}
+
+	
+	
+	#carousel-testimonials ol li  {
+	border:1px solid aqua;
+	background-color: aqua;
+}
+#carousel-testimonials ol li:hover {
+	border:1px solid aqua;
+	background-color: #888;
+}
+#carousel-testimonials ol li:active{
+		border:1px solid red;
+	background-color: aqua;
+}
+		
+			<?php
+	mysql_connect("localhost","root", ""); 
+	mysql_select_db("database3");
+			$res = mysql_query("select * from images22");
+		$row= mysql_fetch_array($res)
+			?>
+
+#carousel-testimonials  #iteml1 {
+	background-image:url(<?php echo $row["photo1"];   ?> ); 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+-o-background-size : cover;
+	background-size: cover;
+	height: 600PX;
+			width: 100%;
+}
+#carousel-testimonials  #iteml1 .carousel-caption {
+	position: relative; top :200px; left: 50px; right: 80px; color: white;
+	font-size: 25px;
+}
+#carousel-testimonials  #iteml1 .carousel-caption h1 sup{
+	border-top: 4px solid blue;
+	border-bottom: 4px solid blue; width: 200px; color: aqua
+}
+#carousel-testimonials  #iteml1 .carousel-caption p {
+	font-size: 25px;
+}
+
+#carousel-testimonials  #item2 {
+	background-image:url(<?php echo $row["photo2"];?>  ); 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+-o-background-size : cover;
+	background-size: cover;
+	height: 600PX;
+									width: 100%;
+}
+#carousel-testimonials  #item2 .carousel-caption {
+	position: relative; top :200px; left: 50px; right: 80px; color: white;
+}
+#carousel-testimonials  #item2 .carousel-caption h1 sup{
+	border-top: 4px solid blue;
+	border-bottom: 4px solid blue; width: 200px; color: aqua
+}
+#carousel-testimonials  #item2 .carousel-caption p {
+	font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+#carousel-testimonials  #item3 {
+	background-image:url(<?php echo $row["photo3"]; ?>); 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+-o-background-size : cover;
+	background-size: cover;
+	height: 600PX;
+										width: 100%;
+	
+}
+
+#carousel-testimonials  #item3 .carousel-caption {
+	position: relative; top :200px; left: 50px; right: 80px; color: white;
+}
+#carousel-testimonials  #item3 .carousel-caption h1 sup{
+	border-top: 4px solid blue;
+	border-bottom: 4px solid blue; width: 200px; color: aqua
+}
+#carousel-testimonials  #item3 .carousel-caption p {
+	font-size: 25px;
+}
+#carousel-testimonials  #item4 {
+background-image:url(<?php echo $row["photo4"]; ?>); 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+-o-background-size : cover;
+	background-size: cover;
+	height:600px;
+	width: 100%;}
+
+#carousel-testimonials  #item4 .carousel-caption {
+	position: relative; top :200px; left: 50px; right: 80px; color: white;
+}
+#carousel-testimonials  #item4 .carousel-caption h1 sup{
+	border-top: 4px solid blue;
+	border-bottom: 4px solid blue; width: 200px; color: aqua
+}
+#carousel-testimonials  #item4 .carousel-caption p {
+	font-size: 25px;
+}
+
+	
+	
+	
+	
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+	
+	</style>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</head>
+
+
+<body>
+	
+	
+	
+	
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand hvr-grow-rotate" href="#">ميكس <span> للبصريات </span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#conya"> اتصل بنا <i class="fa fa-phone"></i> </a></li>
+        <li><a href="http://localhost/mix%20optics/html/registeradmin.php"> تسجيل الدخول  <span class="glyphicon glyphicon-log-in"></span></a></li>
+		  <li><a href="#our-skills text-center">   المهارات    <span class="glyphicon glyphicon-tree-deciduous"> </span>                         </a>    </li>
+		  
+        <li><a class="hvr-grow-rotate"href="#protfolios">الصور <i class="fa fa-image"></i> </a></li>
+        <li><a href="#abouts-me">نبذة عننا <span class="glyphicon glyphicon-user"></span></a></li>
+		  <li><a href="#testimonials">الرئيسية <i class="fa fa-home fa-lg"></i>  </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+		<section id="testimonials">
+	<div id ="testimonials-cover">
+<div class="container">
+	<div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
+ <ol class="carousel-indicators">
+    <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-testimonials" data-slide-to="1"></li>
+    <li data-target="#carousel-testimonials" data-slide-to="2"></li>
+    <li data-target="#carousel-testimonials" data-slide-to="3"></li>
+  </ol>
+        
+  <div class="carousel-inner" role="listbox">
+
+			<div class="item active" id="iteml1"> <div class="carousel-caption">
+           <h1 >  ميكس <sup> للبصريات</sup> </h1>				
+				<p>     محل نظارات للمنتجات النظارات الشمسية والطبية      </p> 
+				
+				</div>
+	
+				</div>
+			<div class="item" id="item2" >
+				<div class="carousel-caption">
+           <h1 >  ميكس <sup> للبصريات</sup> </h1>				
+				<p>     محل نظارات للمنتجات النظارات الشمسية والطبية      </p> 
+				
+				</div>
+	
+				</div>
+			
+				
+				<div class="item"id="item3">
+						<div class="carousel-caption">
+           <h1 >  ميكس <sup> للبصريات</sup> </h1>				
+				<p>     محل نظارات للمنتجات النظارات الشمسية والطبية       </p> 
+				
+				</div>
+				
+				</div>
+			<div class="item"id ="item4">
+				
+				<div class="carousel-caption">
+           <h1 >  ميكس <sup> للبصريات</sup> </h1>				
+				<p>     محل نظارات للمنتجات النظارات الشمسية والطبية       </p> 
+				
+				</div></div>
+				
+			
+				
+			<!--	 <a class="left carousel-control" href="#carousel-testimonials" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-testimonials" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>-->
+			
+			</div>
+			
+			
+	</div>
+			
+			</div>
+			</div>
+	
+	</section>	
+	<?php
+	mysql_connect("localhost","root", ""); 
+	mysql_select_db("database3");
+			$res = mysql_query("select * from images33");
+		$row= mysql_fetch_array($res)
+			?>
+<section id="abouts-me">
+	
+	<div class="container">
+		<div class="row">  
+			<div class="col-lg-12 col-xs-8 col-md-10">
+       <div class = "image "> 
+		  <div class="col-lg-5 col-md-2 "> 
+		<img src= "<?php echo $row["photo5"];  ?> " alt="test">
+	   </div>
+		   </div>
+	<div class ="info  wow fadeInUp" >
+		<div class="col-lg-7 col-md-8 ">
+	   <h3>نبذة عننا </h3>
+			<p>  نحن محتروفون ومسووقود ىىىىىىىىىىىىىىيهننننننننننن يتت ى ىى ىىين نننيى ىينس ةةيممسة ةةسنة ةيممسرة &nbsp;&nbsp; حن محتروفون ومسووقود ىىىىىىىىىىىىىىيهننننننننننن يتت ى ىى ىىين نننيى ىينس ةةيممسة ةةسنة ةيممسرة 
+		<br>حن محتروفون ومسووقود ىىىىىىىىىىىىىىيهننننننننننن يتت ى ىى ىىين نننيى ىينس ةةيممسة ةةسنة ةيممسرة &nbsp;<br> محتروفون ومسووقود ىىىىىىىىىىىىىىيهننننننننننن يتت ى ىى ىىين نننيى ىينس ةة ةةسنة ةيممسرة  &nbsp;&nbsp;
+		
+		
+		</p>
+			<p> حن محتروفون ومسووقود ىىىىىىىىىىىىىىيهننننننننننن يتت ى ىى ىىين نننيى ىينس ةةيممسة ةةسنة ةيممسرة  </p>
+</div></div>
+	</div>	
+	      </div>	
+		 </div>
+	</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<section id="try-on">
+		<div class ="Try on"> 
+		<div class="container">
+		<div class="row">  
+			<div class="col-lg-15 col-xs-10 col-md-12 ">
+		<h2 class=""> جرب بنفسك </h2>
+		<p> 
+			
+			جرب بنفسك احدث عروض نظارات الطبية والشمسجرب بنفسك احدث عروض نظارات الطبية والشمسجرب بنفسك احدث عروض نظارات الطبية والشمسجرب بنفسك 
+			
+			 للتجربة   <br>
+		 <button onclick="location.href='http://localhost/mix%20optics/html/hh.html';">اضغط هنا</button>
+				</p>    
+			</div>
+			</div></div> </div></section>
+	
+	
+	
+	
+	<section id="our-skills text-center">
+  <div class="our-skills">
+		
+		
+		<div class="container">
+            <h2>كفاءة النظارات</h2> 
+             
+            <?php
+	mysql_connect("localhost","root", ""); 
+	mysql_select_db("database3");
+			$res = mysql_query("select * from images33");
+		$row= mysql_fetch_array($res)
+			?>
+            
+            
+            <div class="row">
+                <div class="col-md-5">
+                 
+					       <div class="skills-info wow flipInY" data-wow-duration="2s" data-wow-offset="400"  >
+                            <h2>   عن مهارتنا   </h2>
+                        <p class ="lead">كفاءة النظارات عن شنابر وكفاءة النظارةكفاءة النظارات عن شنابر وكفاءة النظارة هذة نظارت عن مهارة كفاءة النظارات عن شنابر وكفاءة النظارة </p>
+     <button type="button" class="btn btn-primary">    تكلم عن مهارتنا  </button>
+                            
+                        </div>
+                        </div>
+					
+					
+					
+					
+					
+           
+      
+
+            
+          <div class="col-md-6 col-md-offset-1">
+                 
+                  <div class="skills-progress">
+					  	  <h3>النظارة الثانية</h3>
+			  <img src="<?php echo $row["photo6"]; ?>" >
+											  
+											  
+                        <div class="progress">
+						
+							
+                    <div class="progress-bar progress-bar-danger progress-bar-striped active"role= "presentation"aria-valuenow="80" valuemin="0"valuemax="100" style="width: 95%;"> 95%
+            </div>
+                       </div>
+                        
+                       					  	  <h3>النظارة الثانية</h3>
+			  <img src="<?php echo $row["photo7"]; ?>" >
+                        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active"role= "presentation"aria-valuenow="80" valuemin="0"valuemax="100" style="width: 80%"> 80%
+             
+                              </div>
+                           </div>
+             					  	  <h3>النظارة الثانية</h3>
+			  <img src="<?php echo $row["photo8"]; ?>" >
+                        <div class="progress">
+            <div class="progress-bar progress-bar-info progress-bar-striped active"role= "presentation"aria-valuenow="80" valuemin="0"valuemax="100" style="width: 75%"> 75%
+              
+                  </div></div>
+                
+                 					  	  <h3>النظارة الثانية</h3>
+			  <img src="<?php echo $row["photo9"]; ?>">
+                        <div class="progress">
+            <div class="progress-bar progress-bar-warning progress-bar-striped active  "role= "presentation"aria-valuenow="80" valuemin="0"valuemax="100" style="width: 65% "> 65%
+             
+                                         
+            </div>
+            </div>
+      </div>
+        
+			</div>
+				</div></div> </div>
+        </section>
+	     
+            <?php
+	mysql_connect("localhost","root", ""); 
+	mysql_select_db("database3");
+			$res = mysql_query("select * from images44");
+		$row= mysql_fetch_array($res)
+		?>
+	<div id="resums">
+		 <div class="resume ">
+ <div class="container">
+		<h2>   المنتجات   </h2>
+	<p> جرب احدث وعروض شمبارات ونظارات حديثة اختر المناسب لك 
+			رب احدث وعروض شمبارات ونظارات حديثة اختر المناسب لك  <br>
+		رب احدث وعروض شمبارات ونظارات حديثة اختر المناسب لك  <br>
+		</p>
+				</div>	
+	<div class="uu"style="padding-left:150px; padding-bottom: 35px;">
+		<img src="<?php echo $row["photo1"];?>"> 
+				<img src="<?php echo $row["photo1"];?>"> 
+
+				<img src="<?php echo $row["photo2"];?>" > 
+
+
+		 		<img src="<?php echo $row["photo3"];?>"> 
+
+		 
+		 		<img src="<?php echo $row["photo4"];?>"> 
+
+				<img src="<?php echo $row["photo5"];?>"> 
+		
+				<img src="<?php echo $row["photo6"];?>"> 
+		<img src="<?php echo $row["photo7"];?>" > 
+		<img src="<?php echo $row["photo8"];?>"> 
+		<img src="<?php echo $row["photo9"];?>"> 
+				<img src="<?php echo $row["photo9"];?>"> 
+		<img src="<?php echo $row["photo9"];?>"> 
+			 </div>
+		</div>
+	</div>	 
+	
+	     <?php
+	mysql_connect("localhost","root", ""); 
+	mysql_select_db("database3");
+	mysql_query("set NAMES utf8");
+			$res = mysql_query("select * from images55");
+		$row= mysql_fetch_array($res)
+			?>
+	
+	<section id = "protfolios"  >
+	 <div class="protfolio" >
+	
+       
+		<h2>  الصور </h2>
+		<p> جميع الصور للمنتجات الموجودة بالمحل </p>
+		 <div class="our-work">
+			 <div class="ya"><img  src="<?php echo $row["photo4"]; ?>" >
+			  <div class="overlay">
+    <div class="text" style="direction: rtl;">
+		 
+					 <h6><?php echo $row["TEXT"]; ?> </h6> 
+				  <h4>    السعر :  350 ج.م</h4>
+ <h5>    السعر :  350 ج.م</h5>
+
+		
+				  <button onclick="location.href='http://localhost/mix%20optics/html/kemoo.php';" id="buttonReadMore">   أقرا المزيد</button>
+		 
+				  </div>
+  </div>
+			 
+			 
+			 
+			 </div>
+			  <div class="ya"><img  src="<?php echo $row["photo8"]; ?> " alt="" style="height:150px; width: 350px;padding-right:  20px; ">
+			  <div class="overlay">
+    <div class="text" style="direction: rtl;">
+					 <h4>    النوع : بكيني </h4> 
+				  <h5>    السعر :  350 ج.م</h5>
+				  
+		 <button onclick="location.href='file:///H:/project%20web/projects/anas/html/yasser.html'; ">   اقرا
+		المزيد</button>
+				  </div>
+  </div>
+			 
+			 
+			 
+			 </div>
+ <div class="ya"><img  src="<?php echo $row["photo4"]; ?>" alt="" style="height:150px; width: 350px;padding-right:  20px; ">
+			  <div class="overlay">
+    <div class="text" style="direction: rtl;">
+					 <h4>    النوع : بكيني </h4> 
+				  <h5>    السعر :  350 ج.م</h5>
+				   <button  onclick="location.href='file:///H:/project%20web/projects/anas/html/yasa.html'; ">   اقرا
+		المزيد</button>
+				  </div>
+  </div>
+			 
+			 
+			 
+			 </div>
+			 <div class="ya"><img  src="<?php echo $row["photo5"]; ?>" alt="" style="height:150px; width: 350px;padding-right:  20px; ">
+			  <div class="overlay">
+    <div class="text" style="direction: rtl;">
+					 <h4>    النوع : بكيني </h4> 
+				  <h5>    السعر :  350 ج.م</h5>
+				  <button onclick="location.href='http://localhost/mix%20optics/html/uhhsan.php'; ">   اقرا
+		المزيد</button>
+				  </div>
+  </div>
+			 
+			 
+			 
+			 </div>
+			  <div class="ya"><img  src="<?php echo $row["photo66"]; ?>" alt="" style="height:150px; width: 350px;padding-right:  20px; ">
+			  <div class="overlay">
+    <div class="text" style="direction: rtl;">
+					 <h4>    النوع : بكيني </h4> 
+				  <h5>    السعر :  350 ج.م</h5>
+				  <button onclick="location.href='http://localhost/mix%20optics/html/nnb.php'; ">   اقرا
+		المزيد</button>
+				  </div>
+  </div>
+			 
+			 
+			 
+			 </div>
+		        <div class="ya"><img  src="<?php echo $row["photo99"]; ?>" alt="" style="height:150px; width: 350px;padding-right:  20px; ">
+			  <div class="overlay">
+    <div class="text" style="direction: rtl;">
+					 <h4>    النوع : بكيني </h4> 
+				  <h5>    السعر :  350 ج.م</h5>
+				 <button onclick="location.href='http://localhost/mix%20optics/html/yasa.php;">   اقرا
+		المزيد</button>
+				  </div>
+  </div>
+			 
+			 
+			 
+			 </div>
+			  <div class="ya"><img  src="<?php echo $row["photo17"]; ?>" alt="" style="height:150px; width: 350px;padding-right:  20px; ">
+			  <div class="overlay">
+    <div class="text" style="direction: rtl;">
+					 <h4>    النوع : بكيني </h4> 
+				  <h5>    السعر :  350 ج.م</h5>
+				 <button   onclick="location.href='http://localhost/mix%20optics/html/park.php';">   اقرا
+		المزيد</button>
+				  </div>
+  </div>
+			 
+			 
+			 
+			 </div>
+			  <div class="ya"><img  src="<?php echo $row["photo88"]; ?>" alt="" style="height:150px; width: 350px;padding-right:  20px; ">
+			  <div class="overlay">
+    <div class="text" style="direction: rtl;">
+					 <h4>    النوع : بكيني </h4> 
+				  <h5>    السعر :  350 ج.م</h5>
+				   <button  onclick="location.href='http://localhost/mix%20optics/html/porko.php';">   اقرا
+		المزيد</button>
+				  </div>
+  </div>
+			 
+			 
+			 
+			 </div>
+			  <div class="ya"><img  src="<?php echo $row["photo10"]; ?>" alt="" style="height:150px; width: 350px;padding-right:  20px; ">
+			  <div class="overlay">
+    <div class="text" style="direction: rtl;">
+					 <h4>    النوع : بكيني </h4> 
+				  <h5>    السعر :  350 ج.م</h5>
+				  <button onclick="location.href='http://localhost/mix%20optics/html/youns.php';" class="btn btn1">   اقرا
+		المزيد</button>
+				  </div>
+  </div>
+			 </div>
+			  <div class="ya"><img  src="<?php echo $row["photo4"]; ?>" alt="" >
+			  <div class="overlay">
+    <div class="text" style="direction: rtl;">
+					 <h4>    النوع : بكيني </h4> 
+				  <h5>    السعر :  350 ج.م</h5>
+				  
+		 <button onclick="location.href='http://localhost/mix%20optics/html/yasser.php'; ">   اقرا
+		المزيد</button>
+				  </div>
+  </div>
+			 
+			 
+			 
+			 </div> <div class="ya"><img  src="<?php echo $row["photo1"]; ?>" alt="">
+			  <div class="overlay">
+    <div class="text" style="direction: rtl;">
+					 <h4>    النوع : بكيني </h4> 
+				  <h5>    السعر :  350 ج.م</h5>
+				  
+		 <button onclick="location.href='http://localhost/mix%20optics/html/yasser.php; ">   اقرا
+		المزيد</button>
+				  </div>
+  </div>
+			 
+			 
+			 
+			 </div>
+			 
+			 </div>
+			  
+		</div>
+		   
+			 
+	
+	
+	</section>
+	
+		
+	
+	
+
+	
+	
+	
+	
+	
+	
+	<section id="conya">
+	<div class ="contact">
+	
+	<div class="container">
+		<div class="row">  <div class="col-lg-20 col-xs-15 col-md-17"> 
+			
+			<div class="info" style="float: right">
+			
+			<div  class="col-lg-10 col-xs-5 col-md-5">
+		<h2>اتصل بنا </h2>
+		<p style="direction: rtl">نحن متميزون في صناعة النظرات ولكن يتم بها علي الوجة الاخر
+			نحن متميزون في صناعة النظرات ولكن يتم بها علي الوجة الاخر 
+			نحن متميزون في صناعة النظرات ولكن يتم بها علي الوجة الاخر 
+			نحن متميزون في صناعة النظرات ولكن يتم بها علي الوجة الاخر 
+			</p>
+		<p style="direction: rtl">شارع مدرسة الحديثة  <br>
+			طهطا  <br>
+			محافظة سوهاج 
+			
+			</p>
+			<p style="direction: rtl;">
+			<strong>  الايميل :  </strong> kamal@yahoo.com<br>
+				<strong>    الموبايل :    </strong> 01285xx525<br>
+			</p>
+		</div>
+			</div>						
+</div>
+			
+			  
+		<form action="kero.php" method="POST">
+			<div  class="col-lg-8 col-xs-10 col-md-10">
+		<label >   : الاسم  </label>
+          <input type= "text"  name="username" required >
+			<label>  : الايميل   </label>
+          <input type= "text" name= "email" required  >
+			<label> : الموبايل  </label>
+          <input type= "text" name="mobile" required >
+		<label> : رسالتك  </label>
+         <textarea  style="direction: rtl;"name="messager" required>  اكتب رسالتك</textarea>
+		<input type="submit" value = "اتصل بنا ">
+		
+		</div>
+		</> 
+		</div>
+			</div>
+		</form>
+		
+	</section>
+		
+	
+	
+	
+	
+	 <div class="footer" >
+	<div class="container">
+	<span>  2020 &copy; جميع الحقوق محفوظة      </span>
+		<ul><li><a class="fa fa-facebook fa-2x circle-icon" id="facebook"></a>    </li> 
+		    <li><a class="fa fa-youtube fa-2x circle-icon" id="youtube"></a>  </li>
+			  <li> <a class="fa fa-linkedin fa-2x circle-icon" id="linkedin"></a></li>
+			<li> <a class="fa fa-google-plus fa-2x circle-icon" id="googleplus"></a></li>
+		          </ul> 
+		   </div>
+		 </div>
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script src= "js/wow.min.js" ></script>
+<script> new WOW().init(); </script>  
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
